@@ -1,9 +1,9 @@
-import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
-import ProjectCard from '../../common/ProjectCard';
+import styles from "./ProjectsStyles.module.css";
+import signin from "../../assets/viberr.png";
+import mcOrder from "../../assets/fresh-burger.png";
+import hipsster from "../../assets/hipsster.png";
+import fitLift from "../../assets/fitlift.png";
+import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
   return (
@@ -11,18 +11,18 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          src={signin}
+          link="https://github.com/Gurban2/Sign-in-ProfilePage.git"
+          h3="Sign in"
+          p="Sign in Page"
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
+          src={mcOrder}
+          link="https://github.com/Gurban2/mcDonalds.git"
+          h3="Mc Order"
           p="Hamburger Restaurant"
         />
-        <ProjectCard
+        {/* <ProjectCard
           src={hipsster}
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Hipsster"
@@ -33,7 +33,7 @@ function Projects() {
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="FitLift"
           p="Fitness App"
-        />
+        /> */}
       </div>
     </section>
   );
